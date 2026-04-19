@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котостудия</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand text-pink" href="#">Котостудия</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                <li class="nav-item"><a class="nav-link" href="#form">Запись</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+    <div class="container">
+        <h1>Мы фотографируем котиков 🐾</h1>
+        <p>Место, где пушистики становятся моделями</p>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container my-5">
+    <h2 class="text-center">О нас</h2>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <p>
+                Наша фотостудия специализируется на тематических съёмках домашних животных.
+                Мы создаём уютную атмосферу, где каждый котик чувствует себя звездой.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <p>
+                Используем профессиональное оборудование, декорации и индивидуальный подход
+                к каждому питомцу.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="container my-5">
+    <h2 class="text-center">Галерея</h2>
+
+    <div class="gallery-grid mt-4">
+        <img src="https://placekitten.com/400/300" alt="">
+        <img src="https://placekitten.com/401/300" alt="">
+        <img src="https://placekitten.com/402/300" alt="">
+    </div>
+</section>
+
+<!-- FORM -->
+<section id="form" class="container my-5">
+    <h2 class="text-center">Записаться на съёмку</h2>
+
+    <form id="bookingForm" class="mt-4 needs-validation" novalidate>
+        <div class="mb-3">
+            <label class="form-label">Имя</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Введите имя</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" required>
+            <div class="invalid-feedback">Введите корректный email</div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Имя котика</label>
+            <input type="text" class="form-control" required>
+            <div class="invalid-feedback">Введите имя котика</div>
+        </div>
+
+        <button class="btn btn-primary">Записаться</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+    © 2025 Котостудия 🐱
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
